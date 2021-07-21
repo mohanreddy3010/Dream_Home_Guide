@@ -1,0 +1,10 @@
+(1)run the following query and then insert data as per the "tabledata" image..
+
+create database dhg;
+create table mainmaterials (
+    ID varchar(255),
+    Materials varchar(255),
+    Type1 int,
+    Type2 int,
+    Type3 int
+);
