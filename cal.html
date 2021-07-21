@@ -1,0 +1,67 @@
+<html>
+	<head><title>Details</title></head>
+<style>
+.img1{
+	position:absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    opacity:0.9;
+    z-index: -1;
+}
+form{
+	background:black;
+	color:white;
+	z-index:1;
+	position: absolute;
+	top:10;
+	left:580;
+	padding-left: 70px;
+	padding-right:70px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 3%;
+	opacity: 0.8;
+
+}
+label{
+	font-size: 20px;
+}	
+.fs{
+	cursor: pointer;
+	border:none;
+}
+.fs:hover{
+	background-color: blue;
+	color:white;
+}
+</style>	
+<body style=" margin-left: 0;margin-right: 0;margin-bottom: 0;margin-top: 0;overflow: hidden;">
+<div>
+<img class="img1" src="2.jpg">	
+<form method="get" action="tc.php">
+		<label>Area of the land(in sq.ft):</label> <input type="number" name="area"><br><br>
+		<label>Number of floors required: </label> <input type="number" name="nof" max="5" min="1"><br><br>
+		<label>No. of litres for Water Tank: </label> <input type="number" name="litres"><br><br>
+		<label style="color: blue;"><b>Choose your quality:</b></label><br><br>
+		<label>Type of cement (per bag):</label> <select name="cement"><option>High</option><option>Medium</option><option>Low</option></select><br><br>
+		<label>Type of bricks (per brick):</label> <select name="brick"><option>High</option><option>Medium</option><option>Low</option></select><br><br>
+		<label>Type of door (main door):</label> <select name="mdoor"><option>High</option><option>Medium</option><option>Low</option></select><br><br>
+		<label>Type of electrification (per floor):</label> <select name="electrification"><option>High</option><option>Medium</option><option>Low</option></select><br><br>
+		<label>Type of fore ceiling (per sqft):</label> <select name="fceil"><option>High</option><option>Medium</option><option>Low</option></select><br><br>
+		<label>Type of granite (per sqft):</label> <select name="granite"><option>High</option><option>Medium</option><option>Low</option></select><br><br>
+		<label>Type of marbles (per sqft):</label> <select name="marble"><option>High</option><option>Medium</option><option>Low</option></select><br><br>
+		<label>Type of paint (per sqft):</label> <select name="paint"><option>High</option><option>Medium</option><option>Low</option></select><br><br>
+		<label>Type of tiles (per sqft):</label> <select name="tile"><option>High</option><option>Medium</option><option>Low</option></select><br><br>
+		<label>Type of window (per window):</label> <select name="window"><option>High</option><option>Medium</option><option>Low</option></select><br><br>
+		<label>Type of ceremics (per sqft):</label> <select name="ceremics"><option>High</option><option>Medium</option></select><br><br>
+		<label>Type of room doors (per door):</label> <select name="rdoor"><option>High</option><option>Medium</option></select><br><br>
+		<label>Type of steel (per kg):</label> <select name="steel"><option>High</option><option>Medium</option></select><br><br>
+        <center><input class="fs" type="submit" value="Submit" style="font-size:25px;position:relative;right:70;text-align: center;"> <input class="fs" type="reset" value="Clear" style="font-size:25px;position:relative;left:50;text-align: center;padding-top: 3px"></center>
+</form>
+</div>
+</body>	
+</html>
